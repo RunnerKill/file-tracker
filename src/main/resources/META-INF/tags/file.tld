@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE taglib
+        PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN"
+	"http://java.sun.com/j2ee/dtd/web-jsptaglibrary_1_2.dtd">
+<taglib>
+    <tlib-version>1.0</tlib-version>
+    <jsp-version>1.2</jsp-version>
+    <short-name>list</short-name>
+    <uri>http://www.sowell.com/file-tracker/path</uri>
+    <description>file-tracker tag</description>
+
+    <tag>
+        <name>scale</name>
+        <tag-class>com.sowell.file.tag.ImageScalePath</tag-class>
+        <body-content>JSP</body-content>
+        <description>get the scaled image's path</description>
+        <attribute>
+            <name>path</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <description>Image's web path</description>
+        </attribute>
+        <attribute>
+            <name>width</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <description>Target width</description>
+        </attribute>
+        <attribute>
+            <name>height</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <description>Target height</description>
+        </attribute>
+    </tag>
+    
+    <tag>
+        <name>cut</name>
+        <tag-class>com.sowell.file.tag.ImageCutPath</tag-class>
+        <body-content>JSP</body-content>
+        <description>get the cutted image's path</description>
+        <attribute>
+            <name>path</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <description>Image's web path</description>
+        </attribute>
+        <attribute>
+            <name>x</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <description>Area's x-axis</description>
+        </attribute>
+        <attribute>
+            <name>y</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <description>Area's y-axis</description>
+        </attribute>
+        <attribute>
+            <name>width</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+            <description>Area's width</description>
+        </attribute>
+        <attribute>
+            <name>height</name>
+            <required>false</required>
+            <rtexprvalue>Area's height</rtexprvalue>
+        </attribute>
+    </tag>
+    
+    <tag>
+        <name>rotate</name>
+        <tag-class>com.sowell.file.tag.ImageRotatePath</tag-class>
+        <body-content>JSP</body-content>
+        <description>get the rotated image's path</description>
+        <attribute>
+            <name>path</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <description>Image's web path</description>
+        </attribute>
+    </tag>
+
+</taglib>
+
+
+
